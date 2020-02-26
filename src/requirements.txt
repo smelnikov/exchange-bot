@@ -1,0 +1,6 @@
+Cython==0.29.15
+pyTelegramBotAPI==3.6.7
+redis==3.4.1
+redis-decorator==0.4
+plotly==4.5.2
+psutil==5.7.0

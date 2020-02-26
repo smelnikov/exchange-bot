@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  bot:
+    build: ./src
+    command: python -m bot
+    volumes:
+      - ./src:/usr/src/app
+    env_file:
+      - .env
+    depends_on:
+      - redis
+  redis:
+    image: redis:3.0-alpine
+    command: redis-server
+    ports:
+      - '6379:6379'
