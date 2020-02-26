@@ -1,17 +1,17 @@
 # Telegram exchange bot
 
-##Quickstart
+## Quickstart
 
-###Install Docker
+### Install Docker
 
 https://docs.docker.com/compose/install/
 
-###Authorize bot
+### Authorize bot
 
 https://core.telegram.org/bots/api#authorizing-your-bot
 
 
-###Env-file explain
+### Env-file explain
 
 Environment variables should be set in `.env` file:
 
@@ -28,19 +28,19 @@ Environment variables should be set in `.env` file:
     REDIS_CACHE_TTL=600
 
     
-###Run
+### Run
 
     docker-compose build
     docker-compose up bot
    
 
 
-##Commands:
+## Commands:
 
 If `base` parameter is not set in command it would be `USD` by default.
 
 
-###__/list {base}__
+### __/list {base}__
 
 returns list of all available rates for `base`
 
@@ -51,7 +51,7 @@ returns list of all available rates for `base`
     ISK 128.76
     ...
 
-###__/exchange {amount} {base} to {currency}__ 
+### __/exchange {amount} {base} to {currency}__ 
 
 converts `amount` of `base` to `currency`
 
@@ -59,7 +59,7 @@ converts `amount` of `base` to `currency`
     >>>
     13.28
 
-###__/history {base} {currency} for {N} days__
+### __/history {base} {currency} for {N} days__
 
 return an image graph chart with the exchange rate of the selected `base`/`currency` for the last `N` days
 
